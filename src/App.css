@@ -22,6 +22,8 @@
   cursor: pointer;
 }
 
+
+
 .header-menu{
   margin: auto 0;
 }
@@ -34,6 +36,10 @@
 .ul-menu-items>li{
   margin-right: 4vw;
   cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: initial;
 }
 
 .ul-menu-items>li:hover{
@@ -182,10 +188,20 @@ h3{
 
 .contact-body{
   background:#BEC0BF;
-  height: 65vh;
+  min-height: 20vh;
+  height: auto;
   width: 100%;
+  padding: 5% 25%;
+
 }
 
+.prelude{
+  text-align: center;
+  margin: auto;
+  color: #0b100c;
+  font-size: 2vw;
+  padding: 0 15%;
+}
 .footer-body{
   width: 100%;
   height: 5vh;
@@ -195,10 +211,8 @@ h3{
   font-size: 2vw;
 }
 
-
-
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.modalImage{
+  height: 500px;
+  width: 650px;
+  position: fixed;
 }
