@@ -1,0 +1,204 @@
+.header-body{
+  background: #245a5a;
+  position: fixed;
+  color: #0b100c;
+  font-size: 1.75vw;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+  box-shadow: 2px 2px 1px;
+
+}
+
+.header-home{
+  display: inline;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 1% 3%;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.header-menu{
+  margin: auto 0;
+}
+
+
+.ul-menu-items{
+  display: flex;
+}
+
+.ul-menu-items>li{
+  margin-right: 4vw;
+  cursor: pointer;
+}
+
+.ul-menu-items>li:hover{
+  opacity: .5
+}
+.home-body{
+  width: 100%;
+  height: 100vh;
+  background: #BEC0BF
+}
+
+.typewriter{
+  margin-top: 15vh;
+  width: 100vw;
+  height: 50vh;
+}
+
+.myName{
+color: #07273E;
+font-size: 7vw;
+font-weight: bold;
+text-align: center;
+margin-top: 5%;
+}
+
+.byLine{
+  color: #0b100c;
+  text-align: center;
+  margin-top: 2%;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.skills-body{
+  padding-top: 5%;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background-color: #BEC0BF;
+  padding-left: 15vw;
+  
+}
+
+h2{
+  color: #0b100c;
+  font-size: 3vw;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.skills-container{
+  margin: 5% 30% 0 15%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.skill-icon{
+  margin-left: 8%;
+  margin-bottom: 10%;
+}
+
+
+.bio-body{
+  padding-top: 5%;
+  padding-left: 15vw;
+  width: 100%;
+  height: 65vh;
+  background: #07273E;
+  display: flex;
+}
+ 
+.bio-container{
+  display: flex;
+  margin: 5% 30% 0 15%;
+}
+
+.bio-image-me{
+  height: 45vh;
+}
+
+.bio-desc{
+  font-size: 1.75vw;
+  column-count: 2;
+  color: #BEC0BF;
+  margin: auto 0 auto 10%
+}
+
+.project-body{
+  padding:5% 0 4% 15vw;
+  width: 100%;
+  min-height: 75vh;
+  height: auto;
+  background: #245a5a
+}
+
+.project-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 5%
+}
+.twitter{
+  width: 45%
+}
+
+.timpview{
+  width: 45%;
+}
+
+h3{
+  color: #07273E;
+  font-size: 3vw;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom:8%;
+}
+
+
+
+.timpview>ul>li, .twitter>ul>li{
+  font-size: 1.75vw;
+  margin-bottom: 3%;
+
+}
+
+.project-sub{
+  font-weight: bold
+}
+
+.project-skills{
+  width: 60%;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.project-images{
+  margin-top:5%;
+  display: flex;
+}
+
+.project-image{
+  height: 11vh;
+  margin: 2%;
+}
+
+.contact-body{
+  background:#BEC0BF;
+  height: 65vh;
+  width: 100%;
+}
+
+.footer-body{
+  width: 100%;
+  height: 5vh;
+  background: #245a5a;
+  color: #BEC0BF;
+  text-align: center;
+  font-size: 2vw;
+}
+
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
