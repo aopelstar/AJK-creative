@@ -20,6 +20,8 @@ import image from './images/Alta.jpg';
 import me from './images/me.jpg'
 import homeImage from './images/screenShots/home.png'
 import splash from './images/screenShots/splash.png';
+import twitter from './images/screenShots/twitterbook.png';
+import twitter2 from './images/screenShots/twitterbook2.png';
 import Modal from 'react-modal';
 import './reset.css';
 import './App.css';
@@ -173,7 +175,7 @@ class App extends Component {
                         <li>- Used React to create both functional and class components</li>
                         <li>- Created a server using Node that 
                             received calls from React
-                            and queried the database</li>
+                            and queried the database using PostgreSQL</li>
                     </ul>
                     <div className="project-skills">
                     React | Javascript | PostgreSQL | Node
@@ -194,6 +196,7 @@ class App extends Component {
                         made with a team of devs</li>
                         <li>- Used NodeJS and Express to create server with RESTful endpoints</li>
                         <li>- Built shopping cart using Stripe and React</li>
+                        <li>- Used react modal to confirm orders</li>
                     </ul>
                     <div className="project-skills">
                     Redux | Stripe | PostgreSQL | Node
@@ -203,8 +206,8 @@ class App extends Component {
 
                     </div>
                     <div className="project-images">
-                    <img src ={splash} className="project-image" onClick={this.openModalTwitter}/>
-                    <img src ={homeImage} className="project-image" onClick={this.openModalTwitter2}/>
+                    <img src ={twitter} className="project-image" onClick={this.openModalTwitter}/>
+                    <img src ={twitter2} className="project-image" onClick={this.openModalTwitter2}/>
                     </div>
                 </div>
             </div>
@@ -235,10 +238,10 @@ class App extends Component {
         <img src={homeImage} className="modalImage"/>
         </Modal>
         <Modal isOpen={this.state.modalTwitterIsOpen} onRequestClose={this.closeModalTwitter} style={customStyle}>
-        <img src={splash} className="modalImage"/>
+        <img src={twitter} className="modalImage"/>
         </Modal>
         <Modal isOpen={this.state.modalTwitter2IsOpen} onRequestClose={this.closeModalTwitter2} style={customStyle}>
-        <img src={homeImage} className="modalImage"/>
+        <img src={twitter2} className="modalImage"/>
         </Modal>
         
       </div>
