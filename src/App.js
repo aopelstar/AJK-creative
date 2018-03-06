@@ -20,9 +20,20 @@ import image from './images/Alta.jpg';
 import me from './images/me.jpg'
 import homeImage from './images/screenShots/home.png'
 import splash from './images/screenShots/splash.png';
+import Modal from 'react-modal';
 import './reset.css';
 import './App.css';
 
+const customStyle = {
+  content: {
+    position: "absolute",
+    left: "25%",
+    height: "500px",
+    width: "650px",
+    margin: "0",
+    padding: "0"
+  }
+}
 
 class App extends Component {
   constructor(){
@@ -30,23 +41,72 @@ class App extends Component {
     this.state = {
 
     }
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.openModalHome = this.openModalHome.bind(this);
+    this.closeModalHome = this.closeModalHome.bind(this);
+    this.openModalTwitter = this.openModalTwitter.bind(this);
+    this.closeModalTwitter = this.closeModalTwitter.bind(this);
+    this.openModalTwitter2 = this.openModalTwitter2.bind(this);
+    this.closeModalTwitter2 = this.closeModalTwitter2.bind(this);
   }
 
   componentWillMount(){
     configureAnchors({offset: -100 })
   }
 
+  openModal(){
+    this.setState({
+      modalIsOpen:true
+    })
+  }
+
+  closeModal(){
+    this.setState({
+      modalIsOpen: false
+    })
+  }
+
+  openModalHome(){
+    this.setState({
+      modalHomeIsOpen:true
+    })
+  }
+
+  closeModalHome(){
+    this.setState({
+      modalHomeIsOpen: false
+    })
+  }
+
+  openModalTwitter(){
+    this.setState({
+      modalTwitterIsOpen:true
+    })
+  }
+
+  closeModalTwitter(){
+    this.setState({
+      modalTwitterIsOpen: false
+    })
+  }
+
+  openModalTwitter2(){
+    this.setState({
+      modalTwitter2IsOpen:true
+    })
+  }
+
+  closeModalTwitter2(){
+    this.setState({
+      modalTwitter2IsOpen: false
+    })
+  }
+
 
   render() {
     return (
       <div className="App">
-        {/* <Header />
-        <Home />
-        <Skills />
-        <Bio />
-        <Project />
-        <Contact />
-        <Footer /> */}
         <div className="header-body">
                 <div className="header-home" onClick={goToTop}>
                     Andrew Keele
@@ -123,8 +183,8 @@ class App extends Component {
 
                     </div>
                     <div className="project-images">
-                    <img src ={splash} className="project-image"/>
-                    <img src ={homeImage} className="project-image"/>
+                    <img src ={splash} className="project-image" onClick={this.openModal}/>
+                    <img src ={homeImage} className="project-image" onClick={this.openModalHome}/>
                     </div>
                 </div>
                 <div className="twitter">
@@ -143,8 +203,8 @@ class App extends Component {
 
                     </div>
                     <div className="project-images">
-                    <img src ={splash} className="project-image"/>
-                    <img src ={homeImage} className="project-image"/>
+                    <img src ={splash} className="project-image" onClick={this.openModalTwitter}/>
+                    <img src ={homeImage} className="project-image" onClick={this.openModalTwitter2}/>
                     </div>
                 </div>
             </div>
@@ -168,8 +228,18 @@ class App extends Component {
         </div>
         </div>
             
-
-        
+        <Modal isOpen={this.state.modalIsOpen} onRequestClose={this.closeModal} style={customStyle}>
+        <img src={splash} className="modalImage"/>
+        </Modal>
+        <Modal isOpen={this.state.modalHomeIsOpen} onRequestClose={this.closeModalHome} style={customStyle}>
+        <img src={homeImage} className="modalImage"/>
+        </Modal>
+        <Modal isOpen={this.state.modalTwitterIsOpen} onRequestClose={this.closeModalTwitter} style={customStyle}>
+        <img src={splash} className="modalImage"/>
+        </Modal>
+        <Modal isOpen={this.state.modalTwitter2IsOpen} onRequestClose={this.closeModalTwitter2} style={customStyle}>
+        <img src={homeImage} className="modalImage"/>
+        </Modal>
         
       </div>
     );

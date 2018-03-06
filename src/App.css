@@ -211,3 +211,8 @@ h3{
   font-size: 2vw;
 }
 
+.modalImage{
+  height: 500px;
+  width: 650px;
+  position: fixed;
+}
