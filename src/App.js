@@ -201,7 +201,7 @@ class App extends Component {
                     <div className="project-skills">
                     Redux | Stripe | PostgreSQL | Node
                     <br/>
-                    <a href="http://TwitterBook.AndrewKeeleCreative.com">
+                    <a href="http://159.89.145.125:4321/auth/callback">
                     TwitterBook.AndrewKeeleCreative.com</a>
 
                     </div>
