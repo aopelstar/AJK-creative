@@ -48,6 +48,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
+      phoneTrue: true,
 
     }
     this.openModal = this.openModal.bind(this);
@@ -123,6 +124,12 @@ class App extends Component {
   closeModalVideo(){
     this.setState({
       modalVideoIsOpen:false
+    })
+  }
+
+  handleChange(key){
+    this.setState({
+      phoneTrue: key
     })
   }
 
@@ -313,7 +320,8 @@ class App extends Component {
               <div className="sub-pre">Please contact me with questions or inquiries.</div>
               
                 <div className="contact-info">
-                Phone: 801-319-0708 | Email: Tantoprecords@gmail.com
+                <div className="telephone" onMouseEnter={() => this.handleChange(false)} onMouseLeave={ () => this.handleChange(true)}>
+                {this.state.phoneTrue?<div className='tele'>Phone</div>:<div className='tele-num'>801-319-0708</div>}</div> | <a href="mailto:tantoprecords@gmail.com?Subject=Inquiry from AndrewKeeleCreative.com" target="_top">Email</a> | <a href="https://github.com/aopelstar?tab=repositories">Github</a>
                 </div>
               </div>
 

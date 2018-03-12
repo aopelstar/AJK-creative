@@ -258,7 +258,7 @@ h3{
   height: auto;
   width: 100%;
   padding: 5% 15%;
-
+  display: flex;
 }
 
 .prelude{
@@ -267,6 +267,19 @@ h3{
   color: #0b100c;
   font-size: 2vw;
   padding: 0 15%;
+}
+
+.contact-info >div:hover, a:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+
+.telephone{
+  display: inline-block;
+}
+
+.tele{
+  width: auto;
 }
 .footer-body{
   display: flex;
