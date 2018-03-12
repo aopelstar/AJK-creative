@@ -1,3 +1,9 @@
+.app{
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
 .header-body{
   background: #245a5a;
   position: fixed;
@@ -17,9 +23,18 @@
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
-  padding: 1% 3%;
+  padding: 1% ;
   margin: auto 0;
   cursor: pointer;
+  color: #0b100c;
+  border-color: #0b100c;
+  white-space: nowrap;
+}
+
+.header-home:hover{
+  color: #BEC0BF;
+  border-color: #BEC0BF;
+  
 }
 
 
@@ -91,34 +106,57 @@ h2{
 }
 
 .skills-container{
-  margin: 5% 30% 0 15%;
+  margin: 5% 13% 0 10%;
   display: flex;
   flex-wrap: wrap;
   
 }
-
 .skill-icon{
-  margin-left: 8%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.icon-container{
+  margin-left: 4%;
   margin-bottom: 10%;
+  padding: 5%;
+}
+.icon{
+  margin: auto;
+
+}
+
+.icon-title{
+  font-size: 2em;
+  text-align: center;
+  width: 150px;
+  margin-top: 10%;
 }
 
 
 .bio-body{
-  padding-top: 5%;
-  padding-left: 15vw;
+  padding: 5% 15vw;
   width: 100%;
-  height: 65vh;
+  min-height: 65vh;
+  height: auto;
   background: #07273E;
   display: flex;
+  padding-left: 15vw;
+}
+
+.bio-body>h2{
+  color: #BEC0BF;
 }
  
 .bio-container{
+  margin: 7% 25% 0 15%;
   display: flex;
-  margin: 5% 30% 0 15%;
 }
 
 .bio-image-me{
-  height: 45vh;
+  max-height: 45vh;
+  height: auto;
 }
 
 .bio-desc{
@@ -129,20 +167,22 @@ h2{
 }
 
 .project-body{
-  padding:5% 0 4% 15vw;
+  padding-top: 5%;
   width: 100%;
   min-height: 75vh;
   height: auto;
-  background: #245a5a
+  background: #245a5a;
+  padding-left: 15vw;
 }
 
 .project-container{
   display: flex;
   justify-content: space-between;
-  margin: 2% 5%
+  margin: 5% 25% 0 15%;
 }
 .twitter{
-  width: 45%
+  width: 45%;
+  height: auto;
 }
 
 .timpview{
@@ -171,10 +211,12 @@ h3{
 
 .project-sub{
   font-weight: bold;
+  min-height: 60px;
 }
 
 .project-skills{
-  width: 60%;
+  margin: 20% 0;
+  width: 100%;
   font-style: italic;
   font-weight: bold;
   line-height: 2;
@@ -182,14 +224,21 @@ h3{
 }
 
 .project-images{
-  margin-top:5%;
+  margin:5% 5% 5% 0;
   display: flex;
+  min-width: 400px;
 }
 
 .project-image{
-  height: 90px;
+  max-height: 100px;
+  height: auto;
   width: 150px;
   margin: 2%;
+}
+
+.project-skills a:hover{
+  color: #BEC0BF;
+  opacity: .5;
 }
 
 .contact-body{
@@ -197,7 +246,7 @@ h3{
   min-height: 20vh;
   height: auto;
   width: 100%;
-  padding: 5% 25%;
+  padding: 5% 15%;
 
 }
 
@@ -209,12 +258,22 @@ h3{
   padding: 0 15%;
 }
 .footer-body{
+  display: flex;
   width: 100%;
-  height: 5vh;
+  height: auto;
   background: #245a5a;
   color: #BEC0BF;
   text-align: center;
   font-size: 2vw;
+  padding: 1%;
+  
+}
+.sub-pre, .contact-info{
+  margin-top: 2%;
+}
+
+.whatevs{
+  margin: auto;
 }
 
 .modalImage{

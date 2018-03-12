@@ -134,15 +134,80 @@ class App extends Component {
             <div className="skills-body">
         <h2>Skills:</h2>
         <div className="skills-container">
-            <div className="skill-icon"><img src={JS} alt="javascript"/></div>
-            <div className="skill-icon"><img src={HTML} alt="HTML"/></div>
-            <div className="skill-icon"><img src={Css} alt="CSS"/></div>
-            <div className="skill-icon"><img src={Nodejs} alt="Node"/></div>
-            <div className="skill-icon"><img src={react} alt="react"/></div>
-            <div className="skill-icon"><img src={postgres} alt="postgres"/></div>
-            <div className="skill-icon"><img src={sql} alt="SQL"/></div>
-            <div className="skill-icon"><img src={git} alt="Git"/></div>
-            <div className="skill-icon"><img src={github} alt="github"/></div>
+
+          <div className="icon-container"> 
+            <div className="skill-icon">
+              <img className="icon" src={JS} alt="javascript"/>
+            </div>
+            <div className="icon-title">
+            Javascript
+            </div>
+          </div>
+          <div className="icon-container"> 
+            <div className="skill-icon">
+              <img className="icon" src={HTML} alt="HTML"/>
+            </div>
+            <div className="icon-title">
+            HTML
+            </div>
+          </div>
+          <div className="icon-container"> 
+            <div className="skill-icon">
+              <img className="icon" src={Css} alt="css"/>
+            </div>
+            <div className="icon-title">
+            CSS
+            </div>
+          </div>
+          <div className="icon-container"> 
+            <div className="skill-icon">
+              <img className="icon" src={Nodejs} alt="node"/>
+            </div>
+            <div className="icon-title">
+            Nodejs
+            </div>
+          </div>
+          <div className="icon-container"> 
+            <div className="skill-icon">
+              <img className="icon" src={react} alt="react"/>
+            </div>
+            <div className="icon-title">
+            Reactjs
+            </div>
+          </div>
+          <div className="icon-container"> 
+            <div className="skill-icon">
+              <img className="icon" src={postgres} alt="postgres"/>
+            </div>
+            <div className="icon-title">
+            PostgreSQL
+            </div>
+          </div>
+          <div className="icon-container"> 
+            <div className="skill-icon">
+              <img className="icon" src={sql} alt="sql"/>
+            </div>
+            <div className="icon-title">
+            SQL
+            </div>
+          </div>
+          <div className="icon-container"> 
+            <div className="skill-icon">
+              <img className="icon" src={git} alt="git"/>
+            </div>
+            <div className="icon-title">
+            git
+            </div>
+          </div>
+          <div className="icon-container"> 
+            <div className="skill-icon">
+              <img className="icon" src={github} alt="github"/>
+            </div>
+            <div className="icon-title">
+            github
+
+            </div>
+          </div>
 
         </div>
 
@@ -179,10 +244,12 @@ class App extends Component {
                     </ul>
                     <div className="project-skills">
                     React | Javascript | PostgreSQL | Node
-                    <br/>
-                    <a href="http://TimpviewEvents.AndrewKeeleCreative.com">
-                    TimpviewEvents.AndrewKeeleCreative.com</a>
-
+                    <div className="live-site">
+                    Live Site: <a href="http:timpviewevents.andrewkeelecreative.com">
+                      Timpview Events</a></div>
+                    <div className='git-repo'>
+                    <a href="https://github.com/aopelstar/Timpview-Events">Timpview Repo</a>
+                    </div>
                     </div>
                     <div className="project-images">
                     <img src ={splash} className="project-image" onClick={this.openModal}/>
@@ -200,10 +267,13 @@ class App extends Component {
                     </ul>
                     <div className="project-skills">
                     Redux | Stripe | PostgreSQL | Node
-                    <br/>
-                    <a href="http://159.89.145.125:4321/auth/callback">
-                    TwitterBook.AndrewKeeleCreative.com</a>
-
+                    <div className="live-site">
+                    Live Site: <a href="http://159.89.145.125:4321/auth/callback">
+                    TwitterBook</a>
+                   </div>
+                   <div className='git-repo'>
+                    <a href="https://github.com/aopelstar/Twitter-book">Twitterbook Repo</a>
+                      </div>
                     </div>
                     <div className="project-images">
                     <img src ={twitter} className="project-image" onClick={this.openModalTwitter}/>
@@ -216,9 +286,9 @@ class App extends Component {
             <ScrollableAnchor id={'section4'}>
             <div className="contact-body">
               <div className="prelude">Thank you for visiting AndrewKeeleCreative.com.
-              Please contact me with questions or inquiries.
+              <div className="sub-pre">Please contact me with questions or inquiries.</div>
               
-                <div>
+                <div className="contact-info">
                 Phone: 801-319-0708 | Email: Tantoprecords@gmail.com
                 </div>
               </div>
