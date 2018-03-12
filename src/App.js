@@ -28,11 +28,18 @@ import './App.css';
 
 const customStyle = {
   content: {
-    position: "absolute",
-    left: "25%",
     height: "500px",
     width: "650px",
-    margin: "0",
+    margin: "auto",
+    padding: "0"
+  }
+}
+
+const videoStyle = {
+  content: {
+    height: "315px",
+    width: "560px",
+    margin: "auto",
     padding: "0"
   }
 }
@@ -51,6 +58,8 @@ class App extends Component {
     this.closeModalTwitter = this.closeModalTwitter.bind(this);
     this.openModalTwitter2 = this.openModalTwitter2.bind(this);
     this.closeModalTwitter2 = this.closeModalTwitter2.bind(this);
+    this.openModalVideo=this.openModalVideo.bind(this);
+    this.closeModalVideo=this.closeModalVideo.bind(this);
   }
 
   componentWillMount(){
@@ -102,6 +111,18 @@ class App extends Component {
   closeModalTwitter2(){
     this.setState({
       modalTwitter2IsOpen: false
+    })
+  }
+
+  openModalVideo(){
+    this.setState({
+      modalVideoIsOpen:true
+    })
+  }
+
+  closeModalVideo(){
+    this.setState({
+      modalVideoIsOpen:false
     })
   }
 
@@ -261,18 +282,21 @@ class App extends Component {
                     <ul>
                         <li className="project-sub">A full stack application
                         made with a team of devs</li>
-                        <li>- Used NodeJS and Express to create server with RESTful endpoints</li>
+                        <li>- Used NodeJS and Express to access the twitter API</li>
                         <li>- Built shopping cart using Stripe and React</li>
-                        <li>- Used react modal to confirm orders</li>
+                        <li>- Used functional components for data management</li>
                     </ul>
                     <div className="project-skills">
                     Redux | Stripe | PostgreSQL | Node
                     <div className="live-site">
-                    Live Site: <a href="http://159.89.145.125:4321/auth/callback">
+                    Live Site: <a href="http://twitterbook.andrewkeelecreative.com/auth/callback">
                     TwitterBook</a>
                    </div>
                    <div className='git-repo'>
                     <a href="https://github.com/aopelstar/Twitter-book">Twitterbook Repo</a>
+                      </div>
+                      <div className='video-tour' onClick={this.openModalVideo}>
+                      Site Video Tour
                       </div>
                     </div>
                     <div className="project-images">
@@ -313,7 +337,11 @@ class App extends Component {
         <Modal isOpen={this.state.modalTwitter2IsOpen} onRequestClose={this.closeModalTwitter2} style={customStyle}>
         <img src={twitter2} className="modalImage"/>
         </Modal>
+        <Modal isOpen={this.state.modalVideoIsOpen} onRequestClose={this.closeModalVideo} style={videoStyle}>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5_IYrQumvCk" frameborder="0" allow="encrypted-media" allowfullscreen className="video"></iframe>
         
+        
+       </Modal>
       </div>
     );
   }

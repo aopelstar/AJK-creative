@@ -241,6 +241,17 @@ h3{
   opacity: .5;
 }
 
+.video-tour:hover{
+  color: #BEC0BF;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.video{
+  display: flex;
+  margin: auto;
+}
+
 .contact-body{
   background:#BEC0BF;
   min-height: 20vh;
