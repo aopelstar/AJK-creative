@@ -245,7 +245,7 @@ class App extends Component {
                     <div className="project-skills">
                     React | Javascript | PostgreSQL | Node
                     <div className="live-site">
-                    Live Site: <a href="http:timpviewevents.andrewkeelecreative.com">
+                    Live Site: <a href="http://timpviewevents.andrewkeelecreative.com">
                       Timpview Events</a></div>
                     <div className='git-repo'>
                     <a href="https://github.com/aopelstar/Timpview-Events">Timpview Repo</a>
