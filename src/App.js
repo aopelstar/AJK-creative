@@ -160,7 +160,7 @@ class App extends Component {
 
           <ScrollableAnchor id={'section1'}>
             <div className="skills-body">
-        <h2>Skills:</h2>
+        <h2>Skills</h2>
         <div className="skills-container">
 
           <div className="icon-container"> 
@@ -244,7 +244,7 @@ class App extends Component {
             
             <ScrollableAnchor id={'section2'}>
             <div className="bio-body">
-        <h2>Bio</h2>
+        <h2 className="bio-h2">Bio</h2>
         <div className="bio-container">
         <div className="bio-image"><img src={me} className="bio-image-me"/></div>
         <div className="bio-desc">They say that charity 
@@ -253,7 +253,7 @@ class App extends Component {
          development. I love problem solving and the pay 
          off involved with overcoming a complex problem. 
          I love photography, building/flying drones, and 
-         creative writing</div> 
+         creative writing.</div> 
         </div>
         </div>
         </ScrollableAnchor>

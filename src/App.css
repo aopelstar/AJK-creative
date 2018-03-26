@@ -1,3 +1,5 @@
+
+
 .app{
   width: 100vw;
   padding: 0;
@@ -142,10 +144,11 @@ h2{
   height: auto;
   background: #07273E;
   display: flex;
+  flex-direction: column;
   padding-left: 15vw;
 }
 
-.bio-body>h2{
+.bio-h2{
   color: #BEC0BF;
 }
  
@@ -304,4 +307,173 @@ h3{
   height: 500px;
   width: 650px;
   position: fixed;
+}
+
+
+@media( max-width:1200px ){
+  
+
+  .header-body{
+    position: fixed;
+    font-size: 3vw;
+    padding: 0 5%;
+  }
+
+  .myName{
+    font-size: 8vw;
+  }
+
+  .byLine{
+    font-size:5vw;
+  }
+
+  .skills-body{
+    padding-left: 0;
+  }
+
+  h2{
+    text-align: center;
+    font-size: 6vw;
+    width: 100%;
+  }
+
+  .bio-h2{
+    text-align: center;
+  }
+
+  .skills-container{
+    margin: 0;
+  }
+
+  .bio-body{
+    padding: 0;
+    min-height: 40vh;
+    padding-top: 5%;
+
+  }
+
+
+  .bio-container{
+    flex-direction: column;
+    margin: 5% 0;
+  }
+
+  .bio-image{
+    margin: auto;
+  }
+
+  .bio-desc{
+    margin: 5% auto;
+    font-size: 3vw;
+    width: 50%;
+  }
+
+
+  .project-body{
+    padding-left: 0;
+  }
+  .project-container{
+    flex-direction: column;
+    margin: 5% 0;
+    justify-content: center;
+
+  }
+
+  .timpview, .twitter{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  h3{
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .timpview>ul>li, .twitter>ul>li{
+    font-size: 3vw;
+    margin-bottom: 3%;
+  
+  }
+
+  .project-skills{
+    font-size: 2.5vw;
+  }
+
+  .project-image{
+    max-height: 150px;
+    height: auto;
+    width: 200px;
+    margin: 2%;
+  }
+
+}
+
+@media(max-width:400px){
+  *{
+    overflow-x: hidden
+  }
+
+  .header-body{
+    font-size: 4.25vw;
+  }
+
+  .home-body{
+    height: 85vh;
+  }
+
+  .skills-container{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .icon-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 3% 0;
+  }
+
+  .icon-title{
+    width: 100vw;
+    text-align: center;
+  }
+
+  .project-images{
+    flex-direction: column;
+  }
+
+  .header-body{
+    width: 100vw;
+  }
+
+  h2{
+    font-size: 15vw;
+  }
+
+  .bio-desc{
+    font-size:5vw;
+    width: 85%;
+  }
+
+  h3{
+    font-size: 6vw;
+  }
+
+  .timpview>ul>li, .twitter>ul>li{
+    font-size: 4vw;
+  }
+  .project-skills{
+    font-size: 3.5vw;
+  }
+
+
+  .prelude{
+    font-size: 4vw;
+  }
+
+  .whatevs{
+    font-size: 3.5vw;
+  }
 }
